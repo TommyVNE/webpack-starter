@@ -1,0 +1,9 @@
+.container {
+  margin-inline: auto;
+  padding-inline: var(--container-p-inline, 1.25rem);
+  max-inline-size: var(--container-width, 62.5rem);
+}
+
+.flow-content > * + * {
+  margin-block-start: var(--flow-size, 1.25rem);
+}

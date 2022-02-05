@@ -1,0 +1,12 @@
+$breakpoints: (
+  small: 40em,
+);
+
+
+@mixin media($screen-size) {
+  $screenSize: map-get($breakpoints, $screen-size);
+
+  @media (min-width: $screenSize) {
+    @content;
+  }
+}
